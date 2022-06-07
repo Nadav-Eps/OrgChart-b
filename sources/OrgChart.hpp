@@ -11,7 +11,7 @@ namespace ariel
                 it_idx = 0;
             };
             string *operator->(){
-                return &(nodes[it_idx]->name);};
+                return &(nodes.at(it_idx)->name);};
             string operator*(){
                 return nodes.at(it_idx)->name;};
             Iter operator++(){
